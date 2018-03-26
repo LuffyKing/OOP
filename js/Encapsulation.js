@@ -1,4 +1,4 @@
-import SportTeam from './SportTeam';
+import SportTeam from './SportsTeam';
 /**
  * A class that serves as the class for footbal teams
  */
