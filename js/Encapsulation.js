@@ -1,4 +1,4 @@
-import SportTeam from './Encapsulation';
+import SportTeam from './SportTeam';
 /**
  * A class that serves as the class for footbal teams
  */
