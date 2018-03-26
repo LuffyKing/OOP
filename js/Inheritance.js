@@ -10,6 +10,7 @@ class FootballTeam extends SportTeam {
     this.styleOfPlay = sportInfo.styleOfPlay;
   }
 }
+
 /**
  * A class that serves as the class for American football
  */

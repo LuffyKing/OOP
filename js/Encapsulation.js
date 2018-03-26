@@ -1,5 +1,7 @@
 import SportTeam from './Encapsulation';
-
+/**
+ * A class that serves as the class for footbal teams
+ */
 class FootballTeam extends SportTeam {
   constructor(sportInfo) {
     super(sportInfo);
