@@ -29,3 +29,5 @@ class AmericanFootballTeam extends SportTeam {
     this.defence = sportInfo.defence;
   }
 }
+
+export { AmericanFootballTeam, FootballTeam };

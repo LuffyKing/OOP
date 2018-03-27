@@ -24,3 +24,5 @@ class FootballTeam extends SportTeam {
     });
   }
 }
+
+export default FootballTeam;
