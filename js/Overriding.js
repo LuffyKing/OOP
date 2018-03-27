@@ -6,7 +6,7 @@ import SportTeam from './SportsTeam';
 class FootballTeam extends SportTeam {
   /**
  * Takes in the the sportInfo object
- * @param {Object} sportInfo objec the team
+ * @param {Object} sportInfo object conataining the info of the team
  */
   constructor(sportInfo) {
     super(sportInfo);
@@ -16,11 +16,11 @@ class FootballTeam extends SportTeam {
   }
   /**
  * Pays players based on bonuses unique to football
- * @param {Object} sportInfo objec the team
+ * @return {undefined} sportInfo objec the team
  */
-  payPlayers(){
+  payPlayers() {
     this.players.forEach((player) => {
-      player.amount = player.baseSalary*((this.bonus.scoring+ this.bonus.tackling)+1);
-    })
+      player.amount = player.baseSalary * ((this.bonus.scoring + this.bonus.tackling) + 1);
+    });
   }
 }

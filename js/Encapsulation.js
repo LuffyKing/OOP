@@ -3,6 +3,10 @@ import SportTeam from './SportsTeam';
  * A class that serves as the class for footbal teams
  */
 class FootballTeam extends SportTeam {
+  /**
+ * Takes in the the sportInfo object
+ * @param {Object} sportInfo object conataining the info of the team
+ */
   constructor(sportInfo) {
     super(sportInfo);
     let _formation = sportInfo.formation;

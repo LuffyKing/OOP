@@ -2,8 +2,11 @@ import SportTeam from './SportsTeam';
 /**
  * A class that serves as the class for footbal teams
  */
-
 class FootballTeam extends SportTeam {
+  /**
+ * Takes in the the sportInfo object
+ * @param {Object} sportInfo object conataining the info of the team
+ */
   constructor(sportInfo) {
     super(sportInfo);
     this.formation = sportInfo.formation;
@@ -14,8 +17,11 @@ class FootballTeam extends SportTeam {
 /**
  * A class that serves as the class for American football
  */
-
 class AmericanFootballTeam extends SportTeam {
+  /**
+ * Takes in the the sportInfo object
+ * @param {Object} sportInfo object conataining the info of the team
+ */
   constructor(sportInfo) {
     super(sportInfo);
     this.specialTeams = sportInfo.specialTeams;
