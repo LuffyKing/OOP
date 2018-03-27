@@ -9,27 +9,41 @@ class FootballTeam extends SportTeam {
  */
   constructor(sportInfo) {
     super(sportInfo);
-    let _formation = sportInfo.formation;
-    let _styleOfPlay = sportInfo.styleOfPlay;
+    this.formation = sportInfo.formation;
+    this.styleOfPlay = sportInfo.styleOfPlay;
   }
-  setFormation(newFormation) {
+  /**
+ * It sets the formation of the team via the setter
+ * @param {String} newFormation The string containing the new formation of the team
+ */
+  set formation(newFormation) {
     const hasFormation = !!newFormation;
-    if (hasFormation){
-      _formation = newFormation;
+    if (hasFormation) {
+      this.formation = newFormation;
     }
   }
-  getFormation() {
-    return _formation;
+  /**
+ * It gets the formation of the team via the getter
+ * @returns {String} formation the string containing the formation of the team
+ */
+  get formation() {
+    return this.formation;
   }
-
-  getStyleOfPlay(){
-    return _styleOfPlay;
+  /**
+ * It gets the style of play of the team via the getter
+ * @returns {String} formation the string containing the formation of the team
+ */
+  get styleOfPlay() {
+    return this.styleOfPlay;
   }
-
-  setStyle(newStyleOFplay){
-    const hasFormation = !!newFormation;
-    if (hasFormation){
-      _formation = newFormation;
+  /**
+ * It sets the style of play of the team via the setter
+ * @param {String} newStyleOfplay the string containing the new style of play of the team
+ */
+  set style(newStyleOfplay) {
+    const hasStyleOfPlay = !!newStyleOfplay;
+    if (hasStyleOfPlay) {
+      this.styleOfPlay = newStyleOfplay;
     }
   }
 }
